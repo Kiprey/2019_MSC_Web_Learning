@@ -1,0 +1,17 @@
+为后端准备的备忘录
+    enroll.php  post
+
+    trueName            真实姓名*
+    sex                 性别*
+        0   男
+        1   女
+    vitalEmail          电子邮箱*    “非常重要”
+    callNum             电话*
+    internDepartment    实习部门*
+        0   研发部
+        1   公关部
+        2   人事部
+    internPosition      实习岗位*
+    phoneNum            手机号码
+    commonEmail         邮箱
+    whatSexToLove       性别取向

@@ -1,0 +1,29 @@
+.theTable {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+tr {
+    height: 40px;
+}
+
+.theP {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.theFirstColumn {
+    width: 150px;
+    text-align: right;
+}
+
+.theInputColumn {
+    width: 300px;
+}
+
+.theLastColumn {
+    width: 500px;
+}

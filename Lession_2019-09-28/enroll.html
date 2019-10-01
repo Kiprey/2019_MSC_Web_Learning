@@ -5,124 +5,144 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>报名</title>
+        <link rel="stylesheet" type="text/css" href="enroll.css" />
     </head>
+
     <body>
-        <form name="enroll" action="enroll.php" method="post">
-            <table border="2" cellspacing="0">
-                <th colspan="3" align="left">
-                    <label>1.姓名和联系方式</label>
-                </th>
-                <tr>
-                    <td align="right">
-                        <label>真实姓名：</label>
-                    </td>
-                    <td>
-                        <input
-                            type="text"
-                            name="trueName"
-                            required="required"
-                        />
-                        <label>*</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="sex" value="0" />男
-                        <input type="radio" name="sex" value="1" />女
-                    </td>
-                </tr>
+        <form action="enroll.php" method="post">
+            <div>
+                <table class="theTable">
+                    <th colspan="3" align="left">
+                        <label>1.姓名和联系方式</label>
+                    </th>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>真实姓名：</label>
+                        </td>
+                        <td class="theInputColumn">
+                            <input
+                                type="text"
+                                name="trueName"
+                                required="required"
+                            />
+                            <label>*</label>
+                        </td>
+                        <td class="theLastColumn">
+                            <input
+                                type="radio"
+                                name="sex"
+                                value="0"
+                                required="required"
+                            />男
+                            <input
+                                type="radio"
+                                name="sex"
+                                value="1"
+                                required="required"
+                            />女
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>电子邮箱：</label>
-                    </td>
-                    <td>
-                        <input
-                            type="email"
-                            name="vitalEmail"
-                            required="required"
-                        />
-                        <label>*</label>
-                    </td>
-                    <td>
-                        <p>
-                            <strong>非常重要！</strong><br />
-                            这是本工作室与您联系的首选方式哦,请填写真实.
-                        </p>
-                    </td>
-                </tr>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>电子邮箱：</label>
+                        </td>
+                        <td class="theInputColumn">
+                            <input
+                                type="email"
+                                name="vitalEmail"
+                                required="required"
+                            />
+                            <label>*</label>
+                        </td>
+                        <td>
+                            <p class="theP theLastColumn">
+                                <strong>非常重要！</strong><br />
+                                这是本工作室与您联系的首选方式哦,请填写真实.
+                            </p>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>电话：</label>
-                    </td>
-                    <td>
-                        <input type="tel" name="callNum" required="required" />
-                        <label>*</label>
-                    </td>
-                    <td>
-                        <label>电话为必须填写项</label>
-                    </td>
-                </tr>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>电话：</label>
+                        </td>
+                        <td class="theInputColumn">
+                            <input
+                                type="tel"
+                                name="callNum"
+                                required="required"
+                            />
+                            <label>*</label>
+                        </td>
+                        <td class="theLastColumn">
+                            <label>电话为必须填写项</label>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>所实习部门：</label>
-                    </td>
-                    <td>
-                        <select name="internDepartment">
-                            <option value="0">研发部</option>
-                            <option value="1">公关部</option>
-                            <option value="2">人事部 </option>
-                        </select>
-                    </td>
-                </tr>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>所实习部门：</label>
+                        </td>
+                        <td class="theInputColumn" colspan="2">
+                            <select name="internDepartment" required>
+                                <option value="0">研发部</option>
+                                <option value="1">公关部</option>
+                                <option value="2">人事部 </option>
+                            </select>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>实习岗位：</label>
-                    </td>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>实习岗位：</label>
+                        </td>
 
-                    <td>
-                        <input
-                            type="text"
-                            name="internPosition"
-                            required="required"
-                        />
-                        <label>*</label>
-                    </td>
-                    <td>
-                        <label>研发部岗位：前端/后端/运维</label>
-                    </td>
-                </tr>
+                        <td class="theInputColumn">
+                            <input
+                                type="text"
+                                name="internPosition"
+                                required="required"
+                            />
+                            <label>*</label>
+                        </td>
+                        <td class="theLastColumn">
+                            <label>研发部岗位：前端/后端/运维</label>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>手机号码：</label>
-                    </td>
-                    <td>
-                        <input type="tel" name="phoneNum" maxlength="11" />
-                    </td>
-                </tr>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>手机号码：</label>
+                        </td>
+                        <td class="theInputColumn">
+                            <input type="tel" name="phoneNum" maxlength="11" />
+                        </td>
+                        <!--为了将表格边框完整显示出来，不得不出此下策，请见谅-->
+                        <td rowspan="3"></td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>邮箱：</label>
-                    </td>
-                    <td>
-                        <input type="email" name="commonEmail" />
-                    </td>
-                </tr>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>邮箱：</label>
+                        </td>
+                        <td class="theInputColumn">
+                            <input type="email" name="commonEmail" />
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td align="right">
-                        <label>性别取向：</label>
-                    </td>
-                    <td>
-                        <input type="text" name="whatSexToLike" />
-                    </td>
-                </tr>
-            </table>
+                    <tr>
+                        <td class="theFirstColumn">
+                            <label>性别取向：</label>
+                        </td>
+                        <td class="theInputColumn">
+                            <input type="text" name="whatSexToLove" />
+                        </td>
+                    </tr>
+                </table>
 
-            <button type="submit">提交！</button>
+                <button type="submit">提交！</button>
+            </div>
         </form>
     </body>
 </html>
