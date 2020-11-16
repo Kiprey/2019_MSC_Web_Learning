@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户资料</title>
+</head>
+<body>
+    <form method="POST" action="modifyPersonalInfo.php" name="changeUserInfo">
+        <label>1.请输入用户email<label>
+        <input type="email" name="changedUser_Email" /><br>
+        <label>请输入修改后的用户资料内容（留空则保持不变）<label><br>
+        <input type="text" name="changedQQ" placeholder="请输入修改后的QQ" /><br>
+        <input type="text" name="changedName" placeholder="请输入修改后的name" /><br>
+        <input type="email" name="changedEmail" placeholder="请输入修改后的email" /><br>
+        <input type="password" name="changedPassword" placeholder="请输入修改后的密码" /><br>
+        <input type="password" name="changedPassword_repeat" placeholder="请再次输入修改后的密码" /><br>
+        <button type="submit">修改</button><br>
+    </form>
+    <form method="POST" action="modifyPersonalInfo.php" name="deleteUser">
+        <label>2.删除用户<label><br>
+        <input type="email" name="deletedUser_Email" placeholder="输入被删除用户的邮箱" /><br>
+        <input type="email" name="deletedUser_Email_repeat" placeholder="再次输入被删除用户的邮箱" /><br>
+        <button type="submit">WARNING!!!! 删除无法撤销!!!! 按下此按钮进行删除!!!</button><br>
+    </form>
+</body>
+</html>

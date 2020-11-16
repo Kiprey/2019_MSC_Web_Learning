@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>帖子</title>
+    </head>
+    <body>
+        <form method="POST" action="modifyPostMsg.php" name="changePostMsg">
+            <label>1.帖子序号<label>
+                    <input type="number" name="changedMsgNum" />
+                    <label>输入修改后的帖子内容<label>
+                            <input type="type" name="changedPostMsg" placeholder="留空则删除帖子" />
+                            <button type="submit">修改</button>
+        </form>
+        <br><br>
+        <form method="POST" action="modifyPostMsg.php" name="sendPostMsg">
+            <label>2.发帖<label>
+                    <label>输入帖子内容<label>
+                            <input type="type" name="sentPostMsg" placeholder="无法发送空帖子" />
+                            <button type="submit">发送</button>
+        </form>
+    </body>
+</html>
